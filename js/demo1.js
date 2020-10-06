@@ -4,14 +4,14 @@
  *
  * Licensed under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
- * 
+ *
  * Copyright 2017, Codrops
  * http://www.codrops.com
  */
 {
 	// Helper vars and functions.
 	const extend = function(a, b) {
-		for( let key in b ) { 
+		for( let key in b ) {
 			if( b.hasOwnProperty( key ) ) {
 				a[key] = b[key];
 			}
@@ -57,11 +57,11 @@
 			anime.remove(this.DOM.img);
 			anime.remove(this.DOM.title);
 		};
-		
+
 		this.mousemoveFn = (ev) => {
 			requestAnimationFrame(() => this._layout(ev));
 		};
-		
+
 		this.mouseleaveFn = (ev) => {
 			requestAnimationFrame(() => {
 				anime({
@@ -94,7 +94,7 @@
 			img: this.options.movement.img.translation,
 			title: this.options.movement.title.translation,
 		};
-			
+
 		const transforms = {
 			img : {
 				x: (-1*t.img.x - t.img.x)/bounds.width*relmousepos.x + t.img.x,
@@ -252,7 +252,7 @@
 			tx: 0,
 			ty: -50,
 			fill: {
-				color: '#282faf',
+				color: '#00000',
 				duration: 500,
 				easing: 'linear'
 			},
@@ -309,7 +309,7 @@
 			const scrollElemToWatch = pos ? DOM.contentElems[pos] : DOM.footer;
 			pos = pos ? pos : contentElemsTotal;
 			const watcher = scrollMonitor.create(scrollElemToWatch,-300);
-			
+
 			watcher.enterViewport(function() {
 				step = pos;
 				anime.remove(DOM.shapeEl);
