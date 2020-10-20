@@ -21,7 +21,7 @@ body {
 	--link-color: #000000;
 	--link-hover-color: #fff;
 	font-family: 'Roboto Mono', monospace;
-	font-weight: 500;
+	font-weight: 200;
 	color: #fff;
 	color: var(--text-color);
 	background-color: #0000;
@@ -184,7 +184,7 @@ a:focus {
 	padding: 0 2em;
 	min-height: 600px;
 	height: 100vh;
-	font-size: 0.85em;
+	font-size: 0.60em;
 }
 
 .content__img {
@@ -199,7 +199,7 @@ a:focus {
 	grid-area: title;
 	font-family: 'nexa_boldregular', sans-serif;
 	letter-spacing: -0.025em;
-	font-size: 8em;
+	font-size: 6em;
 	line-height: 160px;
 	margin: 0;
 	text-transform: lowercase;
@@ -263,7 +263,7 @@ a:focus {
 }
 
 .content__related-title {
-	font-size: 1em;
+	font-size: 0,5em;
 	margin: 0;
 	padding: 0.5em;
 }
@@ -344,7 +344,7 @@ a:focus {
 }
 
 .codrops-header__title {
-	font-size: 1,5em;
+	font-size: 1 em;
 	padding: 5;
 	margin: 2;
 	font-weight: 400;
@@ -359,7 +359,7 @@ a:focus {
 .demo {
 	display: inline-block;
 	position: relative;
-	font-size: 0.85em;
+	font-size: 0.70em;
 	margin: 0 0.25em 0.5em 0;
 	padding: 1em;
 }
@@ -473,7 +473,7 @@ a:focus {
 	.content__author,
 	.content__desc,
 	.content__link {
-		font-size: 1.35em;
+		font-size: 1em;
 	}
 }
 
